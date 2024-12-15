@@ -2,8 +2,8 @@ import React from "react";
 
 const NavBar = () => {
   return (
-    <div className="w-full">
-      <div className="navbar bg-base-100 border p-1 flex justify-between">
+    <div>
+      <div className="navbar bg-base-100 border  p-1 flex justify-between items-center">
         <div className="">
           <label
             htmlFor="my-drawer-2"
