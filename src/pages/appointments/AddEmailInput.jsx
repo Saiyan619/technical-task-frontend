@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const AddEmailInput = () => {
-  const [clinicEmails, setClinicEmails] = useState([""]); // Initial contact input
+  const [clinicEmails, setClinicEmails] = useState([""]); 
 
   // Handle adding a new contact input field
   const addEmail = () => {

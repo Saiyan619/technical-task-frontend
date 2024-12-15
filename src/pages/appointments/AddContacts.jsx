@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 
 const AddContacts = () => {
-  const [clinicContacts, setClinicContacts] = useState([""]); // Initial contact input
+  const [clinicContacts, setClinicContacts] = useState([""]); 
 
   // Handle adding a new contact input field
   const addContact = () => {
