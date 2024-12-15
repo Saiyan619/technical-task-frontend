@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+import daisyui from 'daisyui';
+
 export default {
   content: [
     "./index.html",
@@ -8,10 +10,10 @@ export default {
     extend: {},
   },
   plugins: [
-    require('daisyui'),
+    daisyui, // Use the imported DaisyUI plugin
   ],
   daisyui: {
     darkTheme: false, // Disable DaisyUI's default dark mode
   },
-  darkMode: 'class', // You can change this to 'media' or 'class' based on your needs, or set it to false to disable dark mode globally
-}
+  darkMode: 'class', // Optional: 'media' or 'class' based on your project
+};
