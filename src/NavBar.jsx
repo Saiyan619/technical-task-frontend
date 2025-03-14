@@ -3,7 +3,7 @@ import React from "react";
 const NavBar = () => {
   return (
     <div>
-      <div className="navbar bg-base-100 border p-1 flex justify-between items-center">
+      <div className="navbar bg-base-100 p-1 flex justify-between items-center">
         <div className="">
           <label
             htmlFor="my-drawer-2"
@@ -22,17 +22,12 @@ const NavBar = () => {
               />
             </svg>
           </label>
-          <a className="btn btn-ghost text-xl">
-            <img src="./logo (1).png" className="w-32" alt="" />
+          <a className="btn text-xl text-white bg-blue-700 w-32">
+            <img src="./Group 1010.png" className="w-6" alt="" />
+            <span>DLEX</span>
           </a>
 
-          <div className="form-control">
-            <input
-              type="text"
-              placeholder="Search"
-              className="hidden md:block input input-bordered w-24 h-8 md:w-auto"
-            />
-          </div>
+         
         </div>
 
         <div className="flex-none gap-2">
@@ -76,7 +71,6 @@ const NavBar = () => {
                   <span className="badge">New</span>
                 </a>
               </li>
-              home
               <li>
                 <a>Settings</a>
               </li>

@@ -5,9 +5,9 @@ import AvatarGroup from "./Components/AvatarGroup";
 const Home = () => {
   return (
     <div className="w-full">
-   <h1>Progress Dashboard</h1>
+   <h1 className="lg:p-7 p-7 text-2xl font-bold">Progress Dashboard</h1>
 
-      <div className="flex flex-col-reverse lg:flex-row">
+      <div className=" flex flex-col-reverse lg:flex-row">
         
         <div className="flex flex-col p-2 lg:p-7 gap-4">
           
@@ -173,7 +173,7 @@ const Home = () => {
         </div>
         
         
-        <div className="w-full">
+        <div className="w-full p-4">
           <UserProfile />
         </div>
 </div>
