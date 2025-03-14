@@ -27,7 +27,7 @@ const Page = () => {
             aria-label="close sidebar"
             className="drawer-overlay"
           ></label>
-          <ul className="menu text-base-content h-full bg-white border w-[220px] md:w-[170px]  font-bold">
+          <ul className="menu text-base-content h-full bg-white border w-[220px] md:w-[220px]  font-bold">
             {/* Sidebar content here */}
 
             {NavigationLinks.map((item) => {

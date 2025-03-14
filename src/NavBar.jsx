@@ -3,7 +3,7 @@ import React from "react";
 const NavBar = () => {
   return (
     <div>
-      <div className="navbar bg-base-100 border  p-1 flex justify-between items-center">
+      <div className="navbar bg-base-100 border p-1 flex justify-between items-center">
         <div className="">
           <label
             htmlFor="my-drawer-2"
@@ -89,9 +89,6 @@ const NavBar = () => {
           </div>
 
           <div className="dropdown dropdown-bottom dropdown-end ">
-            <div tabIndex={0} role="button" className="btn m-1 btn-ghost">
-              EN
-            </div>
             <ul
               tabIndex={0}
               className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow"

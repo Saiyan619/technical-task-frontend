@@ -1,108 +1,182 @@
 import React from "react";
+import UserProfile from "./UserProfile";
+import AvatarGroup from "./Components/AvatarGroup";
 
 const Home = () => {
   return (
-    <div className="p-6 m-auto">
-      <div className="flex justify-between items-center">
-        <div className="breadcrumbs text-sm">
-          <ul>
-            <li>
-              <a>Home</a>
-            </li>
-            <li>
-              <a>User Profile</a>
-            </li>
-          </ul>
+    <div className="w-full">
+   <h1>Progress Dashboard</h1>
+
+      <div className="flex flex-col-reverse lg:flex-row">
+        
+        <div className="flex flex-col p-2 lg:p-7 gap-4">
+        <div className="flex flex-col lg:flex-row lg:items-center justify-center lg:justify-between gap-4">
+
+            
+        <div className="card w-72 lg:w-96 h-52 bg-blue-700 text-white border card-lg shadow-sm">
+  <div className="card-body">
+                <div className="flex flex-col">
+                  <p className="text-xs">DEADLINE 12:00</p>
+                  <span className="text-xl font-semibold">Exam - Unit 5</span>
+                  <p className="text-sm">Spanish for beginners</p>
+                </div>
+                
+<AvatarGroup />
+  </div>
+</div>
+
+        <div className="flex flex-col lg:flex-row gap-5">
+
+        <div className="card bg-orange-200 w-72 h-52 border card-sm shadow-sm">
+  <div className="card-body">
+                  <div className="flex flex-col">
+                    <img className="w-6" src="./Vector.svg" alt="icon" />
+                    <span className="font-semibold">Homework</span>
+                    <p>For today lesson</p>
+                    </div>
+
+<span className="mt-5 lg:mt-10">35 MINS AGO</span>                  
+  </div>
+</div>
+
+<div className="card bg-blue-200 w-72 h-48 border card-sm shadow-sm">
+  <div className="card-body">
+                  <div className="flex flex-col">
+                    <img className="w-6" src="./Vector.svg" alt="icon" />
+                    <span className="font-semibold">Homework</span>
+                    <p>For today lesson</p>
+                    </div>
+
+<span className="mt-5 lg:mt-10">35 MINS AGO</span>                  
+  </div>
+              </div>
+              
         </div>
 
-        <button>Refresh</button>
-      </div>
-
-      <div className="flex flex-col md:flex-row md:justify-between gap-7 mt-10">
-        <div className="flex flex-col md:w-2/3 lg:w-2/3">
-          <div className="flex items-center gap-3">
-            <div className="avatar">
-              <div className="w-20 rounded-full">
-                <img src="./Ellipse 760.png" />
-              </div>
-            </div>
-
-            <div className="flex flex-col">
-              <div className="badge p-3 rounded-md text-xs font-bold bg-yellow-400">
-                Super Admin
-              </div>
-
-              <span className="text-2xl">Dr Kim Jones</span>
-
-              <div className="flex">
-                <button className="btn bg-green-600 btn-xs text-white">
-                  Save
-                </button>
-                <button className="btn bg-gray-300 btn-xs">Cancel</button>
-              </div>
-            </div>
-          </div>
-          <div className="divider"></div>
-
-          <div>
-            <div className="flex w-full flex-col">
-              <div className="mt-2 card bg-base-300 rounded pl-2 pt-1 shadow-sm h-8 ">
-                Manage Clicks
-              </div>
-              <div className="mt-2 card bg-base-300 rounded pl-2 pt-1 shadow-sm h-8 ">
-                Clinic Details
-              </div>
-              <div className="mt-2 card bg-base-300 rounded pl-2 pt-1 shadow-sm h-8 ">
-                Payment Settings
-              </div>
-              <div className="mt-2 card bg-base-300 rounded pl-2 pt-1 shadow-sm h-8 ">
-                Prescription Settings
-              </div>
-            </div>
-          </div>
         </div>
 
-        <div>
-          <span className="font-bold">Settings</span>
+          
 
-          <div className="flex flex-col">
-            <div className="flex items-center justify-between">
-              <span className="font-bold mt-2">Ai predictive search</span>
-              <input
-                type="checkbox"
-                className="toggle toggle-primary"
-                defaultChecked
-              />
-            </div>
+          <div className="flex flex-col lg:flex-row lg:items-center gap-5">
 
-            <p className="text-xs text-gray-500">
-              The AI search allows you to give predictive analysis based on
-              patient vitals, examinations, labs and reports.
-            </p>
-          </div>
-
-          <div>
-            <span className="font-bold mt-2">Prescription layout</span>
-            <p className="text-xs text-gray-500">
-              Choose from the template available or add your own templates
-            </p>
-
-            <div className="flex gap-3">
-              <div className="bg-gray-300 w-24 h-24 text-sm p-1">
-                Add custom template
-              </div>
-
-              <div className="bg-gray-300 w-24 h-24 flex items-center justify-center">
-                <img src="./Letter head.png" className="w-16 " alt="" />
-              </div>
-            </div>
-            <span className="text-blue-600">
-              change contents in prescriptions
-            </span>
-          </div>
-        </div>
-      </div>
+          <div className="card border w-full lg:w-72 bg-base-100 card-lg shadow-sm">
+  <div className="card-body">
+                <div className="flex items-center justify-between">
+                 <div>
+                 <span className="font-semibold">Group Info</span>   
+                 <p className="text-sm">13 students in the group</p>
+                  </div>
+                  <div><img src="./Vector-2.svg" alt="icon" /></div>
+                </div>
+                
+                <div className="card bg-orange-400 text-white w-full h-28 card-xs shadow-sm">
+  <div className="card-body">
+                    <div className="flex items-center">
+                      <div>
+                      <span>Group Work</span>
+                      <p className="text-xs">4 students from your group are online now</p>
+                      </div>
+                      <div>&gt;</div>
     </div>
+    
+                  </div>
+
+                </div>
+
+                <div>
+                  <span className="font-semibold">Todays Lesson</span>
+                  <p className="text-xs text-gray-500">Unit 6 - Article</p>
+                </div>
+            
+                
+  </div>
+</div>
+
+          <div className="card w-72 border bg-base-100 card-lg shadow-sm">
+  <div className="card-body">
+    <h2 className="card-title mb-5">Overall Progress</h2>
+
+    <div className="w-full h-28 card-xs">
+  <div className="">
+                    <div className="flex flex-col">
+                      <div>
+                        <div className="flex justify-between items-center">
+                          <span className="text-xl"> Germany for <br /> beginners</span>
+                          <img src="./germany.svg" alt="icon-flag" />
+                        </div>
+                        
+                        </div>
+                      <div className="flex flex-col mt-5">
+                        <progress className="progress progress-primary w-56" value="70" max="100"></progress>
+                        <span>75%</span>
+                      </div>
+    </div>
+    
+                  </div>
+
+                </div>                
+                <div className="justify-end border-t card-actions mt-3">
+      <button className="text-blue-800">Explore Now</button>
+    </div>
+  </div>
+            </div>
+            
+         
+        </div>
+
+
+          <div className="flex flex-col lg:flex-row lg:items-center gap-5">
+
+          <div className="card border w-full h-28 card-xs shadow-sm">
+  <div className="card-body">
+                    <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-4">
+                  <div>
+                      <img src="./create-outline.svg" alt="icon" />
+                    </div>
+                      <div>
+                      <span>Grammer</span>
+                      <p className="text-xs">30+ grammer</p>
+                      </div>
+                    
+                      </div>
+                      <div>&gt;</div>
+    </div>
+    
+                  </div>
+
+                </div>
+         
+                <div className="card border w-full h-28 card-xs shadow-sm">
+  <div className="card-body">
+                    <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-4">
+                  <div>
+                      <img src="./create-outline.svg" alt="icon" />
+                    </div>
+                      <div>
+                      <span>Grammer</span>
+                      <p className="text-xs">30+ grammer</p>
+                      </div>
+                    
+                      </div>
+                      <div>&gt;</div>
+    </div>
+    
+                  </div>
+
+                </div>
+            
+          </div>
+
+        </div>
+        
+        
+        <div className="p-2">
+          <UserProfile />
+        </div>
+</div>
+      </div>
   );
 };
 
