@@ -2,7 +2,7 @@ import React from 'react'
 
 const UserProfile = () => {
   return (
-      <div className='w-full rounded lg:64 bg-gray-100 h-screen p-10'>
+      <div className='w-full rounded lg:w-full bg-gray-100 h-screen p-10'>
           <div className='flex items-center flex-col'>
           <div className='flex flex-col items-center mt-5'>
           <div className="avatar">

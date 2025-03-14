@@ -10,10 +10,11 @@ const Home = () => {
       <div className="flex flex-col-reverse lg:flex-row">
         
         <div className="flex flex-col p-2 lg:p-7 gap-4">
-        <div className="flex flex-col lg:flex-row lg:items-center justify-center lg:justify-between gap-4">
+          
+        <div className="flex flex-col lg:flex-row lg:items-center justify-center lg:justify-between gap-2">
 
             
-        <div className="card w-72 lg:w-96 h-52 bg-blue-700 text-white border card-lg shadow-sm">
+        <div className="card w-full lg:w-72 h-52 bg-blue-700 text-white border card-lg shadow-sm">
   <div className="card-body">
                 <div className="flex flex-col">
                   <p className="text-xs">DEADLINE 12:00</p>
@@ -27,7 +28,7 @@ const Home = () => {
 
         <div className="flex flex-col lg:flex-row gap-5">
 
-        <div className="card bg-orange-200 w-72 h-52 border card-sm shadow-sm">
+        <div className="card bg-orange-200 w-full lg:w-36 h-52 border card-sm shadow-sm">
   <div className="card-body">
                   <div className="flex flex-col">
                     <img className="w-6" src="./Vector.svg" alt="icon" />
@@ -35,11 +36,11 @@ const Home = () => {
                     <p>For today lesson</p>
                     </div>
 
-<span className="mt-5 lg:mt-10">35 MINS AGO</span>                  
+<span className="mt-5 lg:mt-5 text-sm">35 MINS AGO</span>                  
   </div>
 </div>
 
-<div className="card bg-blue-200 w-72 h-48 border card-sm shadow-sm">
+<div className="card bg-blue-200 w-full lg:w-36 h-52 border card-sm shadow-sm">
   <div className="card-body">
                   <div className="flex flex-col">
                     <img className="w-6" src="./Vector.svg" alt="icon" />
@@ -47,7 +48,7 @@ const Home = () => {
                     <p>For today lesson</p>
                     </div>
 
-<span className="mt-5 lg:mt-10">35 MINS AGO</span>                  
+<span className="mt-5 lg:mt-5 text-sm">35 MINS AGO</span>                  
   </div>
               </div>
               
@@ -92,7 +93,7 @@ const Home = () => {
   </div>
 </div>
 
-          <div className="card w-72 border bg-base-100 card-lg shadow-sm">
+          <div className="card w-full lg:w-72 border bg-base-100 card-lg shadow-sm">
   <div className="card-body">
     <h2 className="card-title mb-5">Overall Progress</h2>
 
@@ -172,7 +173,7 @@ const Home = () => {
         </div>
         
         
-        <div className="p-2">
+        <div className="w-full">
           <UserProfile />
         </div>
 </div>

@@ -64,8 +64,6 @@ const NavBar = () => {
                 </div>
               </div>
               <div>
-                {" "}
-                <span className="text-sm hidden md:block">Kim Jones</span>
               </div>
             </div>
             <ul
