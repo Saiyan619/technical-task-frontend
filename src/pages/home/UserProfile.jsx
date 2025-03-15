@@ -36,7 +36,7 @@ const UserProfile = () => {
               <div className='flex flex-col gap-4 mt-5'>
               <div className='border flex items-center gap-4 p-4 rounded-lg'>
                   <div className='flex items-center gap-2'>
-                      <span>63%</span>
+                      <span className='text-blue-600'>63%</span>
                       <img src="./Group 1003.svg" alt="icon" />
                   </div>
                 {/* <div></div> */}
@@ -49,8 +49,8 @@ const UserProfile = () => {
 
               <div className='border flex items-center gap-4 p-4 rounded-lg'>
                   <div className='flex items-center gap-2'>
-                      <span>63%</span>
-                      <img src="./Group 1003.svg" alt="icon" />
+                      <span className='text-yellow-600'>63%</span>
+                      <img src="./Group 1004.png" alt="icon" />
                   </div>
                 {/* <div></div> */}
                   <div>

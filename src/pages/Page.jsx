@@ -3,13 +3,13 @@ import React from "react";
 import { Link, Outlet } from "react-router-dom";
 
 const NavigationLinks = [
-  { title: "Dashboard", linkTo: "/", image: "./icon_home.png" },
-  { title: "Overview", linkTo: "/appointments", image: "./Group.png" },
-  { title: "Chat", linkTo: "/", image: "./ion_logo-whatsapp.png" },
-  { title: "Team", linkTo: "/", image: "./Component 5.png" },
-  { title: "Tasks", linkTo: "/", image: "./Component 3.png" },
-  { title: "Reports", linkTo: "/", image: "./Component 2.png" },
-  { title: "Settings", linkTo: "/", image: "./trending-up.png" },
+  { title: "Dashboard", linkTo: "/", image: "./Graph.svg" },
+  { title: "Overview", linkTo: "/appointments", image: "./Chart.svg" },
+  { title: "Chat", linkTo: "/", image: "./Chat.svg" },
+  { title: "Team", linkTo: "/", image: "./User.svg" },
+  { title: "Tasks", linkTo: "/", image: "./Document.svg" },
+  { title: "Reports", linkTo: "/", image: "./Danger.svg" },
+  { title: "Settings", linkTo: "/", image: "./Setting.svg" },
 ];
 
 const Page = () => {
@@ -31,6 +31,29 @@ const Page = () => {
             {/* Sidebar content here */}
 
             <div>
+
+              <div className="flex justify-between items-center bg-blue-600 p-4 rounded-lg">
+
+                <div className="flex items-center gap-3">
+                <div className="avatar avatar-placeholder">
+  <div className="bg-neutral text-neutral-content w-8 rounded-full">
+    <span className="text-xs flex justify-center mt-[10px]">DW</span>
+  </div>
+</div>
+
+                <div>
+                  <span>Dlex Designs</span>
+                  <p>general team</p>
+                </div>
+             </div>
+
+             <div>
+
+<img src="./unfold_more.svg" alt="icon" />
+            </div>
+                
+              </div>
+
       {NavigationLinks.map((item) => {
               return (
                 <Link className="mt-3" to={item.linkTo}>

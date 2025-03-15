@@ -33,22 +33,22 @@ const Home = () => {
                   <div className="flex flex-col">
                     <img className="w-6" src="./Vector.svg" alt="icon" />
                     <span className="font-semibold">Homework</span>
-                    <p>For today lesson</p>
+                    <p className="text-sm text-gray-500">For today lesson</p>
                     </div>
 
-<span className="mt-5 lg:mt-5 text-sm">35 MINS AGO</span>                  
+<span className="mt-5 lg:mt-5 text-xs">35 MINS AGO</span>                  
   </div>
 </div>
 
 <div className="card bg-blue-200 w-full lg:w-36 h-52 border card-sm shadow-sm">
   <div className="card-body">
                   <div className="flex flex-col">
-                    <img className="w-6" src="./Vector.svg" alt="icon" />
-                    <span className="font-semibold">Homework</span>
-                    <p>For today lesson</p>
+                    <img className="w-6" src="./Vector-3.svg" alt="icon" />
+                    <span className="font-semibold">Reading</span>
+                    <p className="text-sm text-gray-500">24 words per week</p>
                     </div>
 
-<span className="mt-5 lg:mt-5 text-sm">35 MINS AGO</span>                  
+<span className="mt-5 lg:mt-5 text-xs">2 HRS AGO</span>                  
   </div>
               </div>
               
@@ -153,11 +153,11 @@ const Home = () => {
                     <div className="flex items-center justify-between">
                   <div className="flex items-center gap-4">
                   <div>
-                      <img src="./create-outline.svg" alt="icon" />
+                      <img src="./Group-2.png" alt="icon" />
                     </div>
                       <div>
-                      <span>Grammer</span>
-                      <p className="text-xs">30+ grammer</p>
+                      <span>Dictionary</span>
+                      <p className="text-xs">10+ words</p>
                       </div>
                     
                       </div>
