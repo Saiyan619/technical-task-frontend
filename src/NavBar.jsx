@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   return (
@@ -74,9 +75,11 @@ const NavBar = () => {
               <li>
                 <a>Settings</a>
               </li>
+              <Link to='/'>
               <li>
                 <a>Logout</a>
               </li>
+              </Link>
             </ul>
           </div>
 

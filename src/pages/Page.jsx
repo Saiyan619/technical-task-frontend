@@ -2,15 +2,18 @@ import React from "react";
 
 import { Link, Outlet } from "react-router-dom";
 
-const NavigationLinks = [
-  { title: "Dashboard", linkTo: "/", image: "./Graph.svg" },
+const NavigationLinks1 = [
+  { title: "Dashboard", linkTo: "/Dashboard", image: "./Graph.svg" },
   { title: "Overview", linkTo: "/appointments", image: "./Chart.svg" },
   { title: "Chat", linkTo: "/", image: "./Chat.svg" },
   { title: "Team", linkTo: "/", image: "./User.svg" },
+];
+
+const NavigationLinks2 = [
   { title: "Tasks", linkTo: "/", image: "./Document.svg" },
   { title: "Reports", linkTo: "/", image: "./Danger.svg" },
   { title: "Settings", linkTo: "/", image: "./Setting.svg" },
-];
+]
 
 const Page = () => {
   return (
@@ -36,12 +39,12 @@ const Page = () => {
 
                 <div className="flex items-center gap-3">
                 <div className="avatar avatar-placeholder">
-  <div className="bg-neutral text-neutral-content w-8 rounded-full">
-    <span className="text-xs flex justify-center mt-[10px]">DW</span>
+  <div className="bg-yellow-500 text-neutral-content w-8 rounded-full">
+    <span className="text-xs text-black flex justify-center mt-[10px]">DW</span>
   </div>
-</div>
+                  </div>
 
-                <div>
+                  <div>
                   <span>Dlex Designs</span>
                   <p>general team</p>
                 </div>
@@ -54,7 +57,7 @@ const Page = () => {
                 
               </div>
 
-      {NavigationLinks.map((item) => {
+      {NavigationLinks1.map((item) => {
               return (
                 <Link className="mt-3" to={item.linkTo}>
                   <li className="">
@@ -67,6 +70,22 @@ const Page = () => {
                 </Link>
               );
             })}
+              <div className="ml-2 mt-4"><span className="text-blue-400">SHORTCUT</span></div>
+      {NavigationLinks2.map((item) => {
+              return (
+                <Link className="mt-3" to={item.linkTo}>
+                  <li className="">
+                    <div className="flex items-center p-2 flex-row mt-4">
+                      <img className="w-5" src={item.image} alt="" />
+
+                      <span>{item.title}</span>
+                    </div>
+                  </li>
+                </Link>
+              );
+            })}
+            
+              
             </div>
 
             <div>
