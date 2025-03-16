@@ -4,7 +4,7 @@ import { Link, Outlet } from "react-router-dom";
 
 const NavigationLinks1 = [
   { title: "Dashboard", linkTo: "/Dashboard", image: "./Graph.svg" },
-  { title: "Overview", linkTo: "/appointments", image: "./Chart.svg" },
+  { title: "Overview", linkTo: "/Dashboard", image: "./Chart.svg" },
   { title: "Chat", linkTo: "/", image: "./Chat.svg" },
   { title: "Team", linkTo: "/", image: "./User.svg" },
 ];

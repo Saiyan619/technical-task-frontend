@@ -5,8 +5,8 @@ const Login = () => {
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-100 p-4">
       <div className="w-full max-w-md bg-white rounded-lg shadow-md p-6">
-        {/* Login Header */}
-        <div className="text-center mb-6">
+
+              <div className="text-center mb-6">
           <h1 className="text-2xl font-bold text-gray-800">Log In</h1>
           <p className="text-gray-600 mt-1">Welcome back! Please enter your details</p>
         </div>
@@ -21,7 +21,6 @@ const Login = () => {
           </p>
         </div>
         
-        {/* Google Sign In Button */}
         <button className="w-full flex items-center justify-center gap-2 border border-gray-300 rounded-lg py-2 px-4 mb-4 hover:bg-gray-50 transition-colors">
           <svg className="w-5 h-5" viewBox="0 0 24 24">
             <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" 
@@ -36,16 +35,13 @@ const Login = () => {
           <span className="text-gray-700 font-medium">Sign in with Google</span>
         </button>
         
-        {/* Or Divider */}
         <div className="flex items-center justify-center mb-4">
           <div className="flex-1 h-px bg-gray-300"></div>
           <div className="px-4 text-gray-500 text-sm">or</div>
           <div className="flex-1 h-px bg-gray-300"></div>
         </div>
         
-        {/* Login Form */}
         <form className="space-y-4">
-          {/* Username Input */}
           <div>
             <label htmlFor="username" className="block text-sm font-medium text-gray-700 mb-1">
               Username
@@ -59,7 +55,6 @@ const Login = () => {
             />
           </div>
           
-          {/* Password Input */}
           <div>
             <label htmlFor="password" className="block text-sm font-medium text-gray-700 mb-1">
               Password
@@ -73,14 +68,12 @@ const Login = () => {
             />
           </div>
           
-          {/* Forgot Password Link */}
           <div className="text-right">
             <a href="#" className="text-sm text-blue-600 hover:text-blue-800">
               Forgot password?
             </a>
           </div>
           
-          {/* Login Button */}
                   <Link to='/Dashboard'>
                   <button
             type="submit"
